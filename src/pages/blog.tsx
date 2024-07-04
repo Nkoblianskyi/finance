@@ -2,7 +2,7 @@ import { Header } from "@/components/header";
 
 const Blog = () => {
     return (
-        <div>
+        <div className="container">
             <Header/>
         </div>
     )

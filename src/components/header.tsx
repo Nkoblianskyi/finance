@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 export const Header: React.FC = () => {
     const navigationLinks = [
@@ -11,19 +11,21 @@ export const Header: React.FC = () => {
     ];
 
     return (
-        <header className="header">
-        <div className="logo">
-            Logo
-        </div>
-        <nav className="navigation">
-            <ul className="navigation-list">
-            {navigationLinks.map((link, index) => (
-                <li key={index}>
-                    <a>{link.label}</a>
-                </li>
-            ))}
-            </ul>
-        </nav>
+        <header className="header container">
+            <div className="header-logo">
+                Logo
+            </div>
+            <nav className="header-nav">
+                <ul className="header-list">
+                {navigationLinks.map((link, index) => (
+                    <li key={index}>
+                        <Link href={link.href}>
+                            {link.label}
+                        </Link>
+                    </li>
+                ))}
+                </ul>
+            </nav>
         </header>
     );
     };
