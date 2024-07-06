@@ -19,12 +19,14 @@ export const Footer = () => {
                 </Link>
                 <p className="footer-text">
                     Vivamus arcu felis bibendum ut tristique et. Diam in arcu cursus euismod quis. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum.
+                    Vivamus arcu felis bibendum ut tristique et. Diam in arcu cursus euismod quis. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum.
+                    Vivamus arcu felis bibendum ut tristique et.
                 </p>
             </div>
             <nav className="footer-nav">
                 <ul className="footer-nav-list">
                     {navigationLinks.map((link, index) => (
-                        <li key={index}>
+                        <li className="footer-link" key={index}>
                             <Link href={link.href}>
                                 {link.label}
                             </Link>

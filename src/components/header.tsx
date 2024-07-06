@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
             <nav className="header-nav">
                 <ul className="header-list">
                 {navigationLinks.map((link, index) => (
-                    <li key={index}>
+                    <li className="header-link" key={index}>
                         <Link href={link.href}>
                             {link.label}
                         </Link>
