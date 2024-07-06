@@ -11,7 +11,8 @@ export const Footer = () => {
     ];
 
     return (
-        <div className = "footer">
+        <>
+        <div className="footer">
             <div className="footer-logo">
                 <Link href='/' className="footer-logo-link">
                     Logo
@@ -22,15 +23,20 @@ export const Footer = () => {
             </div>
             <nav className="footer-nav">
                 <ul className="footer-nav-list">
-                {navigationLinks.map((link, index) => (
-                    <li key={index}>
-                        <Link href={link.href}>
-                            {link.label}
-                        </Link>
-                    </li>
-                ))}
+                    {navigationLinks.map((link, index) => (
+                        <li key={index}>
+                            <Link href={link.href}>
+                                {link.label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </div>
+            <div className="footer-bottom">
+                <p className="footer-bottom-text">All Rights Reserved</p>
+                <p  className="footer-bottom-text">© 2023 Corporate Company</p>
+            </div>
+        </>
     )
 }
