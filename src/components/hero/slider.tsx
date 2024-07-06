@@ -14,7 +14,7 @@ const frameworks: Frameworks = {
 };
 
 export const Slider = () => {
-    const [selectedFramework, setSelectedFramework] = useState<keyof typeof frameworks>('html'); // Встановлення типу для useState
+    const [selectedFramework, setSelectedFramework] = useState<keyof typeof frameworks>('html');
 
     const handleClick = (framework: keyof typeof frameworks) => {
     setSelectedFramework(framework);
