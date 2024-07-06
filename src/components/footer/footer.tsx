@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link"
 
-export const Header: React.FC = () => {
+export const Footer = () => {
     const navigationLinks = [
         { href: '/', label: 'Industries' },
         { href: '/services', label: 'Services' },
@@ -11,14 +11,17 @@ export const Header: React.FC = () => {
     ];
 
     return (
-        <header className="header container">
-            <div className="header-logo">
-                <Link href='/'>
+        <div className = "footer">
+            <div className="footer-logo">
+                <Link href='/' className="footer-logo-link">
                     Logo
                 </Link>
+                <p className="footer-text">
+                    Vivamus arcu felis bibendum ut tristique et. Diam in arcu cursus euismod quis. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum.
+                </p>
             </div>
-            <nav className="header-nav">
-                <ul className="header-list">
+            <nav className="footer-nav">
+                <ul className="footer-nav-list">
                 {navigationLinks.map((link, index) => (
                     <li key={index}>
                         <Link href={link.href}>
@@ -28,6 +31,6 @@ export const Header: React.FC = () => {
                 ))}
                 </ul>
             </nav>
-        </header>
-    );
-    };
+        </div>
+    )
+}

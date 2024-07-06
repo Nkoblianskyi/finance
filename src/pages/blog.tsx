@@ -1,9 +1,12 @@
-import { Header } from "@/components/header";
+import { Hero } from "@/components/hero/hero";
+import { Layout } from "@/layouts/main_layout";
 
-const Blog = () => {
+const Blog = ( {}) => {
     return (
         <div className="container">
-            <Header/>
+            <Layout>
+                <Hero/>
+            </Layout>
         </div>
     )
 }
