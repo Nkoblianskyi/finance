@@ -1,0 +1,58 @@
+.details 
+    display: grid
+    grid-template-columns: 1fr 2fr
+    &-left
+        background-color: #FFCA28
+        display: flex
+        flex-direction: column
+        align-items: start
+    &-list
+        margin: 84px 45px 55px 41px
+        display: flex
+        flex-direction: column
+        gap: 40px
+    &-item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 19px
+    &-right
+    &-right-wrapp
+        background-color: #fff
+        margin: 110px 75px 50px 75px
+        display: grid
+        grid-template-rows: auto 1fr
+        grid-template-columns: 1fr 1fr
+        gap: 10px
+        height: 285px
+    &-right-title
+        margin-bottom: 23px
+        grid-column: 1 / 3
+        position: relative
+        &:before
+            position: absolute
+            content: ''
+            bottom: -18px
+            background-color: #FFB400
+            height: 6px
+            width: 52px
+            border-radius: 2px
+    &-right-text
+        margin-top: 23px
+        margin-left: 25px
+    &-left-text
+        margin-top: 23px
+        margin-right: 25px
+    &-button
+        background-color: #03254A
+        color: #FFFFFF
+        width: 100%
+        padding: 20px 20px
+        padding-left: 74px
+        font-family: Inter
+        font-size: 30px
+        font-weight: 700
+        line-height: 50.4px
+        text-align: left
+    &-img
+        margin-left: 93px    
