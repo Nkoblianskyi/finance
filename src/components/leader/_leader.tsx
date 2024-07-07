@@ -3,22 +3,22 @@ import { Slider } from "./_slider"
 export const Leader: React.FC = () => {
     const slides = [
         { 
-            title: '1111', 
+            title: 'We’ve Been Providing Quality Solutions For Over 20 Years.”', 
             backgroundImage: '/land2.jpg',
-            text: 'sdfsdf',
-            span: 'ohsubjh.',
+            text: 'Mr. Mario Dela Cruz',
+            span: 'Managing Partner.',
         },
         { 
-            title: '2222', 
+            title: 'If you think you can do a thing or think you cant do a thing, youre right.', 
             backgroundImage: '/land3.jpg',
-            text: 'adgsrfvcgc',
-            span: 'ytjhdfxgv.',
+            text: 'Ford',
+            span: 'Boss.',
         },
         { 
-            title: '3333', 
+            title: 'When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.', 
             backgroundImage: '/land4.jpg',
-            text: 'dfsdfdsf',
-            span: '23534225.',
+            text: 'Ford',
+            span: 'Boss',
         }
     ];
 
