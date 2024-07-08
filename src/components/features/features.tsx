@@ -30,7 +30,7 @@ const items = [
     {
         backgroundImg: '/f6.jpg',
         title: 'The future of cybersecurity',
-        description: 'Accounting Automation Transforming Business Solutions',
+        description: 'Accounting Automation Transforming Business Solutions.Accounting.Accounting',
     }
 ]
 

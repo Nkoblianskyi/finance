@@ -8,10 +8,13 @@ interface FeaturesProps {
 }
 
 export const FeaturesItem: React.FC<FeaturesProps> = ({ backgroundImg, title, description }) => {
+    const [hover, setHover] = useState(false);
 
     return (
-        <div className="featuresitem">
-            <div className='featuresitem-wrapp'>
+        <div className="featuresitem"
+            onMouseLeave={() => setHover(false)}
+            onMouseEnter={() => setHover(true)} >
+            <div className="featuresitem-wrapp">
                 <Image
                     src={backgroundImg}
                     alt={title}
@@ -20,11 +23,15 @@ export const FeaturesItem: React.FC<FeaturesProps> = ({ backgroundImg, title, de
                     objectFit="cover"
                     className='featuresitem-img'
                 />
-                <h1 className="featuresitem-title">{title}</h1>
+            </div>
+
+            {!hover && (<h1 className="featuresitem-title">{title}</h1>)}
+            {hover && (
                 <div className='featuresitem-description'>
+                    <h1 className="featuresitem-description-title">{title}</h1>
                     <p className="featuresitem-text">{description}</p>
                 </div>
-            </div>
+            )}
         </div>
     );
 };

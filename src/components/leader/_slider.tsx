@@ -35,11 +35,11 @@ export const Slider: React.FC<SliderProps> = ({slides}) => {
                 <button className='slider-btn' onClick={handleButtonClick}>
                     Our Leaderships
                     <Image
-                    className='slider-btn-svg'
-                    src="/shape.svg"
-                    alt="image shape"
-                    width={22}
-                    height={16}
+                        className='slider-btn-svg'
+                        src="/shape.svg"
+                        alt="image shape"
+                        width={22}
+                        height={16}
                     />
                     {[...Array(slides.length)].map((_,index) => (
                         <div
